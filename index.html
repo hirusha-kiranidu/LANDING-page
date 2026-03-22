@@ -1,257 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="stylesheet" href="assets\css\main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="assets\js\main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KidCloud is a smart child safety platform combining wearable technology, IoT, AI, and mobile monitoring for parents.">
+  <title>KidCloud | Smart Child Safety</title>
 
+  <link rel="icon" type="image/png" href="assets/image/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="navbar">
+  <a class="skip-link" href="#home">Skip to main content</a>
 
-        <div class="nav-container">
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a href="#home" class="brand" aria-label="KidCloud home">
+        <img src="assets/image/logo.png" alt="KidCloud logo" class="brand-logo" data-fallback-name="KidCloud">
+        <span class="brand-name">KidCloud</span>
+      </a>
 
-            <!-- LEFT SIDE: LOGO + BRAND NAME -->
-            <div class="brand">
-                <img src="assets\image\logo.png" alt="Kidcloud logo" class="logo-img">
-                <span class="brand-name">KidCloud</span>
-            </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
 
-            <!-- RIGHT SIDE: LINKS INSIDE SAME CONTAINER -->
-            <nav class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#features">Features</a>
-                <a href="#team">Team</a>
-                <a href="#order">Order</a>
-            </nav>
+      <nav id="primary-navigation" class="nav-links" aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#app" class="nav-link">App</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#order" class="nav-link">Order</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-shape hero-shape-a" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape-b" aria-hidden="true"></div>
+
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">KidCloud Smart Child Tracking System</p>
+          <h1 class="reveal">Smart Child Safety, Powered by Technology</h1>
+          <p class="hero-subtitle reveal">
+            KidCloud helps parents stay connected with their children through real-time tracking, AI-powered
+            risk monitoring, and safe zone alerts.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#order">Get Started</a>
+            <a class="btn btn-secondary" href="#app">Watch Demo</a>
+          </div>
+
+          <ul class="trust-badges reveal" aria-label="Key capabilities">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Real-time GPS Tracking</li>
+            <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> AI Risk Detection</li>
+            <li><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Safe Zone Alerts</li>
+          </ul>
         </div>
-    </header> 
-    
-<!-- home section -->
 
-    <section id="home" class="home-section">
-        <div class="home-logo">
-            <img src="assets\image\logo-1.png" alt="kidcloud logo">
+        <div class="hero-visual reveal" aria-label="KidCloud interface preview">
+          <img src="assets/image/logo-1.png" alt="KidCloud emblem" class="hero-logo" data-fallback-name="KidCloud">
+
+          <article class="status-panel" aria-label="Live status panel">
+            <h2>Live Child Status</h2>
+            <ul>
+              <li><span class="status-dot"></span> Device connected to KidCloud</li>
+              <li><span class="status-dot"></span> Movement stream updating in real time</li>
+              <li><span class="status-dot"></span> AI monitoring risk patterns</li>
+            </ul>
+          </article>
         </div>
+      </div>
 
-        <div class="glass-container">
-
-            <div class="home-text">
-                <p class="line">Welcome to KidCloud</p>
-                <p class="line">A project to track your child safely</p>
-                <p class="line">We provide realtime location and safety monitoring</p>
-            </div>
-
-        </div>
-
-        <!-- left image  -->
-
-        <div class="home-left-image">
-            <img src="assets\image\cloud.png" alt="left visual">
-        </div>
-
-        <!-- right image -->
-         <div class="home-right-image">
-            <img src="assets\image\cloud.png" alt="right visual">
-         </div>
+      <div class="hero-cloud hero-cloud-left" aria-hidden="true">
+        <img src="assets/image/cloud.png" alt="" data-fallback-name="Cloud">
+      </div>
+      <div class="hero-cloud hero-cloud-mid" aria-hidden="true">
+        <img src="assets/image/cloud.png" alt="" data-fallback-name="Cloud">
+      </div>
+      <div class="hero-cloud hero-cloud-right" aria-hidden="true">
+        <img src="assets/image/cloud.png" alt="" data-fallback-name="Cloud">
+      </div>
     </section>
 
-
-<!-- feature section -->
-
-    <section id="features" class="features-section">
-
-        <h2 class="section-title">Features</h2>
-        <div class="features-container">
-
-            <!-- Feature Card 1 -->
-            <div class="feature-card">
-                <img src="assets\image\feature1.png" alt="Feature 1">
-                <h3>Real-time Tracking</h3>
-                <p>Track your child's location instantly via our mobile app with complete accuracy.</p>
-            </div>
-
-            <!-- Feature Card 2 -->
-            <div class="feature-card">
-                <img src="assets\image\feature2.png" alt="Feature 2">
-                <h3>Risk Mnitoring</h3>
-                <p>Ensure child safety by tracking down the sound's of child's environment by intergrating AI model </p>
-            </div>
-
-            <!-- Feature Card 3 -->
-            <div class="feature-card">
-                <img src="assets\image\feature3.png" alt="Feature 3">
-                <h3>Safe Zones</h3>
-                <p>Create custom routes and safe zones so your child is always protected outdoors.</p>
-            </div>
-
+    <section id="features" class="section features">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Features</p>
+          <h2>Everything parents need in one intelligent safety platform</h2>
         </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-media">
+              <img src="assets/image/feature1.png" alt="Real-time tracking illustration" data-fallback-name="Tracking">
+            </div>
+            <h3>Real-time Tracking</h3>
+            <p>Track your child's live location from the KidCloud app with fast, accurate updates and route visibility.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-media">
+              <img src="assets/image/feature2.png" alt="Risk monitoring illustration" data-fallback-name="Risk">
+            </div>
+            <h3>Risk Monitoring</h3>
+            <p>AI continuously analyzes signals to identify unusual situations and notify parents before risks escalate.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-media">
+              <img src="assets/image/feature3.png" alt="Safe zone illustration" data-fallback-name="Safe Zones">
+            </div>
+            <h3>Safe Zones</h3>
+            <p>Define custom safe areas and routes, then receive instant alerts when your child enters or exits them.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-media icon-only" aria-hidden="true">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3>Wearable Device Integration</h3>
+            <p>Connect child-friendly wearable devices that stream location and sensor data directly into KidCloud.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-media icon-only" aria-hidden="true">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h3>Emergency Alerts</h3>
+            <p>Receive high-priority notifications for sudden risk events, with quick action steps for immediate response.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-media icon-only" aria-hidden="true">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Mobile Dashboard Access</h3>
+            <p>Monitor location, health, and safety updates through a clean, parent-focused dashboard on your phone.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <section id="how-it-works" class="section how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How It Works</p>
+          <h2>A simple flow designed for real-world child safety</h2>
+        </div>
 
-<!-- App section -->
+        <ol class="steps-grid" aria-label="KidCloud workflow">
+          <li class="step-card reveal">
+            <span class="step-index">01</span>
+            <h3>Child wears the smart device</h3>
+            <p>The wearable stays comfortable all day while collecting location and environmental safety data.</p>
+          </li>
 
-    <section id="app-preview" class="app-section">
-        <h2 class="section-title">Our Mobile App</h2>
+          <li class="step-card reveal">
+            <span class="step-index">02</span>
+            <h3>Device sends data to KidCloud</h3>
+            <p>IoT connectivity securely transfers updates to the KidCloud cloud system in real time.</p>
+          </li>
 
-            <div class="app-container">
-                <div class="phone-frame">
-                    <img src="assets\image\App1.jpeg" alt="App Screen 1">
-                </div>
+          <li class="step-card reveal">
+            <span class="step-index">03</span>
+            <h3>Parents monitor updates in the app</h3>
+            <p>Parents view movement history, status updates, and live notifications from anywhere.</p>
+          </li>
 
-                <div class="phone-frame">
-                    <img src="assets\image\App2.jpeg" alt="App Screen 2">
-                </div>
-
-                <div class="phone-frame">
-                    <img src="assets\image\App3.jpeg" alt="App Screen 3">
-                </div>
-            </div>
-
-    <!-- Download button -->
-            <div class="download-btn-wrapper reveal-btn">
-                <button id="downloadAppBtn" class="download-btn">
-                    Download App
-                </button>
-            </div>
+          <li class="step-card reveal">
+            <span class="step-index">04</span>
+            <h3>AI detects risk and sends alerts</h3>
+            <p>KidCloud AI detects unusual behavior and triggers instant safety alerts for faster decisions.</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-
-
-<!-- Team cards  -->
-
-    <section id="team" class="team-section">
-        <h2 class="section-title">Our Team</h2>
-
-        <div class="team-container">
-
-        <!-- Member 1 -->
-            <div class="team-card">
-                <img src="assets\image\sayuri.jpg" alt="Team Member 1">
-                <div class="team-overlay">
-                    <h3>Sayuri Senara</h3>
-                    <p>Team Leader. Project coordinator and UI & UX designer and Mobile app developer focusing on Android and iOS platforms.</p>
-                </div>
-            </div>
-
-        <!-- Member 2 -->
-            <div class="team-card">
-                <img src="assets\image\pasan.jpg" alt="Team Member 2">
-                <div class="team-overlay">
-                    <h3>Pasan tharupathi</h3>
-                    <p>Backend developer responsible for APIs and system logic . Hardware and IoT specialist working on wearable devices.</p>
-                </div>
-            </div>
-
-        <!-- Member 3 -->
-            <div class="team-card">
-                <img src="assets\image\hirusha.jpg" alt="Team Member 3">
-                <div class="team-overlay">
-                    <h3>Hirusha Kiranidu</h3>
-                    <p>Frontend & Web developer focused on clean and user-friendly interfaces. Hardware and IoT specialist working on wearable devices.</p>
-                </div>
-            </div>
-
-        <!-- Member 4 -->
-            <div class="team-card">
-                <img src="assets\image\wathmi.jpg" alt="Team Member 4">
-                <div class="team-overlay">
-                    <h3>Wathmi Kodippili</h3>
-                    <p>Hardware and IoT specialist working on wearable devices and UI & UX Designer </p>
-                </div>
-            </div>
-
-        <!-- Member 5 -->
-            <div class="team-card">
-                <img src="assets\image\binadi.jpeg" alt="Team Member 5">
-                <div class="team-overlay">
-                    <h3>Binadi Laknara</h3>
-                    <p>Database and cloud engineer handling data and security.</p>
-                </div>
-            </div>
-
-        <!-- Member 6 -->
-            <div class="team-card">
-                <img src="team-6.jpg" alt="Team Member 6">
-                <div class="team-overlay">
-                    <h3>Rashmika Sewmini</h3>
-                    <p>Database and cloud engineer handling data and security.</p>
-                </div>
-            </div>
+    <section id="highlights" class="section highlights">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Highlights</p>
+          <h2>Built for always-on peace of mind</h2>
         </div>
+
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <p class="stat-number" data-counter-target="24" data-suffix="/7">0</p>
+            <h3>Monitoring</h3>
+            <p>Continuous protection with day-and-night system availability.</p>
+          </article>
+
+          <article class="stat-card reveal">
+            <p class="stat-number" data-counter-target="5" data-suffix="s">0</p>
+            <h3>Instant Alerts</h3>
+            <p>Critical notifications are delivered in seconds when risks are detected.</p>
+          </article>
+
+          <article class="stat-card reveal">
+            <p class="stat-number" data-counter-target="50" data-suffix="+">0</p>
+            <h3>Safe Zones</h3>
+            <p>Create multiple personalized safety areas around school, home, and travel routes.</p>
+          </article>
+
+          <article class="stat-card reveal">
+            <p class="stat-number" data-counter-target="10000" data-suffix="+">0</p>
+            <h3>Connected Devices</h3>
+            <p>Scalable architecture ready for expanding families and community deployments.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-
-
-<!--  Order Section  -->
-
-    <section id="order" class="order-section">
-        <h2 class="section-title">Place Your Order</h2>
-
-        <div class="order-form-wrapper reveal-order">
-            <form id="orderForm" class="order-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="text" name="address" placeholder="Your Address" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
-
-                <button type="submit" class="order-btn">Submit Order</button>
-            </form>
+    <section id="app" class="section app-preview">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">App Preview</p>
+          <h2>Explore the KidCloud mobile experience</h2>
         </div>
+
+        <div class="app-layout">
+          <div class="app-carousel reveal" aria-label="KidCloud app screenshots carousel">
+            <button class="carousel-btn prev" type="button" aria-label="Previous app screen">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="carousel-window">
+              <div class="carousel-track">
+                <article class="app-slide is-active" data-label="Live Location">
+                  <div class="phone-frame">
+                    <img src="assets/image/App1.jpeg" alt="KidCloud app live location screen" data-fallback-name="Dashboard">
+                  </div>
+                  <p class="slide-label">Dashboard</p>
+                </article>
+
+                <article class="app-slide" data-label="Safety Alerts">
+                  <div class="phone-frame">
+                    <img src="assets/image/App2.jpeg" alt="KidCloud app safety alerts screen" data-fallback-name="Safety Alerts">
+                  </div>
+                  <p class="slide-label">Settings Page</p>
+                </article>
+
+                <article class="app-slide" data-label="Child Profile">
+                  <div class="phone-frame">
+                    <img src="assets/image/App3.jpeg" alt="KidCloud app child profile screen" data-fallback-name="Child Profile">
+                  </div>
+                  <p class="slide-label">Settings Page</p>
+                </article>
+              </div>
+            </div>
+
+            <button class="carousel-btn next" type="button" aria-label="Next app screen">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+
+            <div class="carousel-dots" role="tablist" aria-label="App screen selector">
+              <button class="carousel-dot active" type="button" role="tab" aria-selected="true" aria-label="Show Live Location"></button>
+              <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show Safety Alerts"></button>
+              <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show Child Profile"></button>
+            </div>
+          </div>
+
+          <aside class="app-copy reveal">
+            <h3>Parent-first mobile control center</h3>
+            <p>
+              The KidCloud app gives parents immediate access to location updates, alert history, and child safety status
+              through a clean and intuitive interface.
+            </p>
+            <ul>
+              <li>Live map and route awareness</li>
+              <li>Risk insights powered by AI</li>
+              <li>Emergency workflow with one-tap response</li>
+            </ul>
+
+            <button id="downloadAppBtn" class="btn btn-primary" type="button">Download App</button>
+            <p id="downloadHint" class="download-hint" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
     </section>
 
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>What parents say about KidCloud</h2>
+        </div>
 
-<!-- Footer -->
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p class="quote">"KidCloud helped us feel calm during school travel. The real-time alerts are fast and reliable."</p>
+            <h3>Nadeesha Perera</h3>
+            <p>Parent of a Grade 3 student</p>
+          </article>
 
-    <footer class="footer-section reveal-footer">
-        <div class="footer-container">
+          <article class="testimonial-card reveal">
+            <p class="quote">"Safe Zones made daily pickups easier. We instantly know when our child arrives and leaves."</p>
+            <h3>Ruwini Fernando</h3>
+            <p>Working mother</p>
+          </article>
 
-            <!-- Brand -->
-            <div class="footer-brand">
-                <h3>KidCloud</h3>
-                <p>
-                    A smart child safety solution combining wearable technology
-                    and mobile applications for real-time protection.
-                </p>
-            </div>
+          <article class="testimonial-card reveal">
+            <p class="quote">"The wearable integration and app dashboard are simple to use. It feels like a complete safety solution."</p>
+            <h3>Kasun Jayasinghe</h3>
+            <p>Father and tech enthusiast</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
-                <a href="#app-preview">App</a>
-                <a href="#team">Team</a>
-                <a href="#order">Order</a>
-            </div>
+    <section id="team" class="section team">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Team</p>
+          <h2>The people building KidCloud</h2>
+        </div>
 
-            <!-- Contact & Social -->
-            <div class="footer-contact">
-                <h4>Connect With Us</h4>
-
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                    <a href="mailto:kidcloud.project@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+947XXXXXXXX"><i class="fas fa-phone"></i></a>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-media">
+              <img src="assets/image/sayuri.jpg" alt="Sayuri Senara" data-fallback-name="Sayuri Senara">
+              <div class="team-overlay">
+                <p class="team-overlay-role">UI/UX Designer, Mobile App Developer</p>
+                <p class="team-overlay-text">Leads KidCloud product direction and crafts seamless mobile experiences for parents.</p>
+                <div class="team-social">
+                  <a href="http://linkedin.com/in/sayuri-senara" target="_blank" rel="noopener" aria-label="Sayuri LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="mailto:sayurigunarathne1322@gmail.com" aria-label="Email Sayuri"><i class="fa-solid fa-envelope"></i></a>
                 </div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Sayuri Senara</h3>
+              <p class="team-role">UI/UX Designer, Mobile App Developer</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-media">
+              <img src="assets/image/pasan.jpg" alt="Pasan Tharupathi" data-fallback-name="Pasan Tharupathi">
+              <div class="team-overlay">
+                <p class="team-overlay-role">Backend · APIs · IoT</p>
+                <p class="team-overlay-text">Builds secure services and device integrations that power real-time KidCloud updates.</p>
+                <div class="team-social">
+                  <a href="http://linkedin.com/in/pasan-tharupathi" target="_blank" rel="noopener" aria-label="Pasan LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="mailto:pasantharupathi1@gmail@gmail.com" aria-label="Email Pasan"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Pasan Tharupathi</h3>
+              <p class="team-role">Backend Developer, API Developer, IoT Specialist</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-media">
+              <img src="assets/image/hirusha.jpg" alt="Hirusha Kiranidu" data-fallback-name="Hirusha Kiranidu">
+              <div class="team-overlay">
+                <p class="team-overlay-role">Backend · API · Database</p>
+                <p class="team-overlay-text">Designs and develops responsive web experiences for the KidCloud ecosystem.</p>
+                <div class="team-social">
+                  <a href="http://linkedin.com/in/hirusha-kiranidu" target="_blank" rel="noopener" aria-label="Hirusha LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="mailto:hirushakiranidu8@gmail.com" aria-label="Email Hirusha"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Hirusha Kiranidu</h3>
+              <p class="team-role">Backend Developer, API Developer, Database Developer</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-media">
+              <img src="assets/image/wathmi.jpg" alt="Wathmi Kodippili" data-fallback-name="Wathmi Kodippili">
+              <div class="team-overlay">
+                <p class="team-overlay-role">UI/UX Designer, Mobile App Developer</p>
+                <p class="team-overlay-text">Connects wearable hardware workflows with user-centered design decisions.</p>
+                <div class="team-social">
+                  <a href="https://www.linkedin.com/in/wathmi-kodippili-56515429b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" aria-label="Wathmi LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="mailto:wathmipadmarasi@gmail.com" aria-label="Email Wathmi"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Wathmi Kodippili</h3>
+              <p class="team-role">UI/UX Designer, Mobile App Developer</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-media">
+              <img src="assets/image/binadi.jpeg" alt="Binadi Laknara" data-fallback-name="Binadi Laknara">
+              <div class="team-overlay">
+                <p class="team-overlay-role">UI/UX Designer, Mobile App Developer</p>
+                <p class="team-overlay-text">Engineers secure data architecture and cloud operations for scalable monitoring.</p>
+                <div class="team-social">
+                  <a href="https://www.linkedin.com/in/binadi-laknara-75617935a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="Binadi LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="mailto:binadilaknara2004@gmail.com" aria-label="Email Binadi"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Binadi Laknara</h3>
+              <p class="team-role">UI/UX Designer, Mobile App Developer</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-media">
+              <img src="assets/image/rashmika.jpeg" alt="Rashmika Sewmini" data-fallback-name="Rashmika Sewmini">
+              <div class="team-overlay">
+                <p class="team-overlay-role">ML Model Training</p>
+                <p class="team-overlay-text">Optimizes data reliability, cloud performance, and safety insights delivery.</p>
+                <div class="team-social">
+                  <a href="www.linkedin.com/in/rashmika-rupasinghe-1969b8358" target="_blank" rel="noopener" aria-label="Rashmika LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="mailto:Rashmikasewmini12@gamil.com" aria-label="Email Rashmika"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Rashmika Sewmini</h3>
+              <p class="team-role">ML Model Training</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section order">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Order / Contact</p>
+          <h2>Request a KidCloud demo or deployment</h2>
+        </div>
+
+        <div class="order-layout">
+          <div class="order-copy reveal">
+            <h3>Let us help you protect what matters most</h3>
+            <p>
+              Fill in your details and our team will contact you with setup guidance, package details,
+              and a personalized KidCloud demo.
+            </p>
+          </div>
+
+          <form
+            id="orderForm"
+            class="order-form reveal"
+            novalidate
+            data-public-key="T6xAOF6dujpXRDHlD"
+            data-service-id="service_3woomue"
+            data-template-id="template_jwrw1xh"
+          >
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input id="name" name="from_name" type="text" autocomplete="name" required>
+              <p id="nameError" class="form-error" aria-live="polite"></p>
             </div>
 
+            <div class="input-group">
+              <label for="address">Address</label>
+              <input id="address" name="user_address" type="text" autocomplete="street-address" required>
+              <p id="addressError" class="form-error" aria-live="polite"></p>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" name="from_email" type="email" autocomplete="email" required>
+              <p id="emailError" class="form-error" aria-live="polite"></p>
+            </div>
+
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone_number" type="tel" autocomplete="tel" required>
+              <p id="phoneError" class="form-error" aria-live="polite"></p>
+            </div>
+
+            <div class="input-group">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="user_message" rows="4" placeholder="Tell us your preferred demo date, school use-case, or questions."></textarea>
+              <p id="messageError" class="form-error" aria-live="polite"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn" id="submitButton">
+              <span class="btn-text">Send Request</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Frequently asked questions</h2>
         </div>
 
-        <!-- Bottom -->
-        <div class="footer-bottom">
-            © <span id="year"></span> KidCloud | Designed & Developed by <strong>Hirusha Kiranidu</strong>
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+                How does KidCloud track location?
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
+              <p>KidCloud uses wearable GPS and IoT communication modules to stream live coordinates to the secure cloud platform.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+                Can parents define safe zones?
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" hidden>
+              <p>Yes. Parents can create multiple safe zones such as home, school, and tuition classes, then receive entry and exit alerts.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+                Is KidCloud secure?
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
+              <p>KidCloud is built with authenticated access controls and secure cloud practices to protect family data and system integrity.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+                Does the system support wearable devices?
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" hidden>
+              <p>Yes. KidCloud is designed to integrate with child-friendly wearable hardware for real-time, always-on safety monitoring.</p>
+            </div>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand reveal">
+        <a href="#home" class="brand footer-brand-link">
+          <img src="assets/image/logo.png" alt="KidCloud logo" class="brand-logo" data-fallback-name="KidCloud">
+          <span class="brand-name">KidCloud</span>
+        </a>
+        <p>
+          KidCloud is a smart child safety solution that combines wearable technology, IoT, AI, and mobile monitoring
+          to help families stay safe and connected in real time.
+        </p>
+      </div>
 
+      <div class="footer-links reveal">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#app">App Preview</a>
+        <a href="#team">Team</a>
+        <a href="#order">Order / Contact</a>
+      </div>
+
+      <div class="footer-contact reveal">
+        <h3>Contact</h3>
+        <a href="mailto:kidcloudapp@gmail.com"><i class="fa-solid fa-envelope"></i> kidcloudapp@gmail.com</a>
+        <a href="tel:+94701507530"><i class="fa-solid fa-phone"></i> +94 70 150 7530</a>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.facebook.com/share/1AdocV3Fs1/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kid_cloud_safety?igsh=OGdsNjNyNWIwYWls&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/kidcloud-smart-child-tracking-system" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> KidCloud. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    <span class="theme-toggle-text">Dark</span>
+  </button>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
