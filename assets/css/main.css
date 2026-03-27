@@ -2045,4 +2045,41 @@ body[data-theme="dark"] img.is-fallback {
     opacity: 1;
     transform: none;
   }
+
+  .video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.video-modal.show {
+  display: flex;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 350px;
+  max-width: 90%;
+  background: black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.video-modal video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
 }
