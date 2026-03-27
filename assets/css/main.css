@@ -1509,11 +1509,11 @@ body[data-theme="dark"] .footer-bottom p {
 }
 
 .footer-social {
-  margin-top: 8px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .footer-social a {
