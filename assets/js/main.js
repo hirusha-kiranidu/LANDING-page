@@ -21,6 +21,7 @@
     initFaqAccordion();
     initBackToTop();
     initOrderForm();
+    initHeroVideo();
   });
 
   function initThemeToggle() {
@@ -622,4 +623,32 @@
     if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
     return `${words[0][0] || ""}${words[1][0] || ""}`.toUpperCase();
   }
+
+  function initHeroVideo() {
+  const btn = document.getElementById("heroWatchDemoBtn");
+  const modal = document.getElementById("videoModal");
+  const close = document.getElementById("closeVideoModal");
+  const video = document.getElementById("demoVideo");
+
+  if (!btn || !modal || !close || !video) return;
+
+  btn.addEventListener("click", () => {
+    modal.classList.add("show");
+    video.play();
+  });
+
+  close.addEventListener("click", () => {
+    modal.classList.remove("show");
+    video.pause();
+    video.currentTime = 0;
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+}
 })();
